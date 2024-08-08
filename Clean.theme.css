@@ -1,0 +1,133 @@
+/**
+ * @name CleanDiscord
+ * @version 1.1.0dev
+ * @description A clean theme
+ * @author AsyncFor
+ */
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --font-primary: 'Inter', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --background-tertiary: color-mix(in oklab, var(--primary-700) 100%, var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+    --custom-avatar-avatar-decoration-border-position: 99999px;
+    --custom-message-avatar-decoration-size: 0;
+
+    /* theme config */
+    --cln-name-color-strength: 75%;
+}
+
+.theme-dark{
+    /*--primary-600: rgb(24, 19, 33);
+    --primary-700: rgb(24, 19, 33);
+    */ 
+    --theme-base-color: #25292e;
+    --background-primary: #25292e;
+    --background-secondary: #202428;
+    /*--header-primary: #b58fef;*/
+    --header-primary: color-mix(in hsl, #b58fef var(--cln-name-color-strength), var(--primary-130));
+    --interactive-active: #ffffff;
+    --bg-overlay-selected: rgba(255, 255, 255, 0.05);
+    --bg-overlay-active: rgba(255, 255, 255, 0.1);
+    --bg-overlay-hover: rgba(255, 255, 255, 0.05);
+    --channeltextarea-background: #30363d;
+}
+
+.profileEffects_f867f9 {
+    display: none;
+}
+
+
+.markup_d6076c {
+    font-size: 0.95rem;
+    font-weight: 350;
+}
+
+.name_d8bfb3 {
+    font-size: 15px;
+}
+.name_f9647d {
+    font-size: 15px;
+    font-weight: 400;
+}
+.name_e9f61e {
+    font-size: 15px;
+}
+
+.avatar_ec86aa {
+    border-radius: 30%;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+}
+
+.text-sm\/normal_dc00ef {
+    font-size: 12px;
+}
+.container_e5a42d {
+    display: none;
+}
+
+.pronouns_c32acf {
+    display: none;
+}
+.dotSpacer_c32acf {
+    display:none;
+}
+
+
+.bannerPremium_c3e427 {
+    display: none;
+}
+
+.statusBubbleOuter_d0a252:after {
+    display:none;
+}
+
+.statusBubbleOuter_d0a252:before {
+    display:none;
+}
+
+.statusBubbleOuter_d0a252, .statusBubble_d0a252{
+    background-color: transparent;
+}
+
+
+
+.statusText_d0a252 {
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.inner_dc0b43 {
+    border-radius: 10px;
+}
+
+
+.full-motion .translate_f88ae3.animatorRight_f88ae3 {
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+    filter: drop-shadow(0px 0px 16px red) invert(80%);
+}
+
+.full-motion .translate_f88ae3.animatorLeft_f88ae3 {
+    transform: scaleX(0);
+    transform-origin: right;
+    opacity: 0;
+    filter: drop-shadow(0px 0px 16px red) invert(80%);
+}
+
+
+
+.full-motion .translate_f88ae3.didRender_f88ae3 {
+    transition: 
+        transform 0.4s  ease-in-out,
+        opacity 0.5s ease-in-out,
+        filter 1s ease-in-out;
+        ;
+    transform: scaleX(1);
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 0px 0px var(--header-primary)) invert(0%);
+}
+
+
